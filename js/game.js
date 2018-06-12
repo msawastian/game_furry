@@ -29,7 +29,7 @@ export function Game() {
         }
     };
 
-    this.turnFurry = function () {
+    this.turnFurry = function (event) {
         switch (event.which) {
             case 37:
                 this.furry.direction = 'left';

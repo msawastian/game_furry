@@ -1,9 +1,11 @@
 import {Game} from "./game";
 
-var game = new Game();
+document.addEventListener('DOMContentLoaded', function () {
+    var game = new Game();
 
-game.startGame();
+    game.startGame();
 
-document.addEventListener('keydown', function(event){
-    game.turnFurry(event);
+    document.addEventListener('keydown', function(event){
+        game.turnFurry(event);
+    });
 });
